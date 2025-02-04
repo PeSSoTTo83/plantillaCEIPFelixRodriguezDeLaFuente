@@ -514,11 +514,21 @@ a:hover {
 a,
 a:focus,
 a:active {
-  color: #ffb262;
+  color: #000000;
+}
+
+/* Asegurar que todos los enlaces de la barra de navegación sean negros */
+.rd-navbar-nav .rd-nav-item .rd-nav-link {
+  color: black !important;
+}
+
+/* Cambiar a naranja al pasar el ratón */
+.rd-navbar-nav .rd-nav-item .rd-nav-link:hover {
+  color: rgb(251, 249, 246) !important;
 }
 
 a:hover {
-  color: #5e5e63;
+  color: #fcfaf8;
 }
 
 a[href*="tel"],
@@ -7630,7 +7640,7 @@ html [class*="section-"].section-bottom-0 {
 }
 
 .bg-gray-100 {
-  background-color: #f6f6f6;
+  background-color: #b3d9e5 !important;
 }
 
 .bg-gray-100:not([style*="background-"])
@@ -7639,7 +7649,7 @@ html [class*="section-"].section-bottom-0 {
 }
 
 .bg-gray-100 .form-input {
-  background: #ffffff;
+  background: #b3d9e5 !important;
 }
 
 .bg-gray-200 {
@@ -8879,7 +8889,7 @@ html.tablet .ui-to-top {
 }
 
 .rd-navbar-static .rd-nav-item.active > .rd-navbar-submenu-toggle {
-  color: #ffb262;
+  color: #030303;
 }
 
 .rd-navbar-static .rd-nav-item.focus > .rd-navbar-submenu-toggle::before,
@@ -8936,8 +8946,9 @@ html.tablet .ui-to-top {
   left: -27px;
   width: 265px;
   padding: 20px 27px 25px;
-  background: #ffffff;
+  background: #add8e6;
   z-index: 5;
+  border: none;
 }
 
 .rd-navbar-static .rd-navbar-dropdown .rd-navbar-dropdown {
@@ -8980,6 +8991,7 @@ html.tablet .ui-to-top {
   display: flex;
   padding: 1px 22px 1px 0;
   text-align: left;
+  color: black !important;
 }
 
 .rd-navbar-static .rd-navbar-dropdown li > a,
@@ -8993,7 +9005,7 @@ html.tablet .ui-to-top {
 
 .rd-navbar-static .rd-navbar-dropdown li > a:hover,
 .rd-navbar-static .rd-megamenu-list li > a:hover {
-  color: #ff923d;
+  color: #fcfaf8;
 }
 
 .rd-navbar-static .rd-navbar-dropdown li > a,
@@ -14959,10 +14971,11 @@ body:not(.lg-from-hash)
   height: 100vh; /* Ocupa la altura completa de la pantalla */
 }
 
-@media (max-width: 768px) { /* Ajuste para móviles */
+@media (max-width: 768px) {
+  /* Ajuste para móviles */
   .swiper-slide {
-      height: auto; /* Permite que se adapte en pantallas pequeñas */
-      min-height: 50vh; /* Asegura un mínimo de altura */
+    height: auto; /* Permite que se adapte en pantallas pequeñas */
+    min-height: 50vh; /* Asegura un mínimo de altura */
   }
 }
 
@@ -14970,14 +14983,28 @@ body:not(.lg-from-hash)
 .swiper-slide-caption h6,
 .swiper-slide-caption h2,
 .swiper-slide-caption span {
-    color: black !important;
+  color: black !important;
 }
 
 /* Cambia el fondo de la pantalla a azul claro */
 .swiper-container {
-    background-color: #add8e6 !important; /* Azul claro */
+  background-color: #add8e6 !important; /* Azul claro */
 }
 
 .rd-navbar-static {
   background-color: #add8e6 !important; /* Azul claro */
+}
+
+.rd-navbar-static .rd-navbar-dropdown li > a:hover {
+  color: white !important;
+}
+
+.responsive-img {
+  width: 100%; /* Ocupa todo el ancho disponible */
+  max-width: 800px; /* Tamaño máximo uniforme */
+  height: 400px; /* Tamaño fijo para todas las imágenes */
+  object-fit: cover; /* Ajusta la imagen para cubrir el espacio sin deformarse */
+  display: block; /* Evita espacios adicionales debajo */
+  margin: 20px auto; /* Centra las imágenes */
+  border-radius: 5px; /* Opcional: bordes redondeados */
 }
