@@ -10142,6 +10142,8 @@ html.tablet .ui-to-top {
   z-index: 1;
   height: auto;
   max-height: 100vh;
+  
+  
 }
 
 .swiper-container-no-flexbox .swiper-slide {
