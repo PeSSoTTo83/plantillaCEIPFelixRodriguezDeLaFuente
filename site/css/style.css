@@ -4636,6 +4636,11 @@ a.thumbnail-thin {
   width: auto;
   height: auto;
   max-width: none;
+  background-color: white !important;
+  filter: none !important;
+  box-shadow: none !important;
+  mix-blend-mode: normal !important;
+  opacity: 1 !important;
 }
 
 @supports (object-fit: cover) {
@@ -10142,6 +10147,7 @@ html.tablet .ui-to-top {
   z-index: 1;
   height: auto;
   max-height: 100vh;
+  padding-bottom: 30px;
 }
 
 .swiper-container-no-flexbox .swiper-slide {
@@ -10321,11 +10327,14 @@ html.tablet .ui-to-top {
 
 .swiper-pagination {
   position: absolute;
-  z-index: 10;
-  display: block;
-  text-align: center;
-  transition: 0.3s;
-  transform: translate3d(0, 0, 0);
+  bottom: -30px; /* Ajusta según el espacio que necesites */
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px; /* Espacio entre los botones */
+  z-index: 10; /* Asegura que estén sobre la imagen */
 }
 
 @media (min-width: 1200px) {
@@ -10338,15 +10347,12 @@ html.tablet .ui-to-top {
   opacity: 0;
 }
 
-.swiper-pagination .swiper-pagination-bullet {
+.swiper-pagination-bullet {
   width: 12px;
   height: 12px;
-  margin-right: 20px;
-  display: inline-block;
-  border-radius: 100%;
-  background: #ffffff;
-  transition: ease-in-out 0.2s;
-  box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.3);
+  margin: 5px;
+  background: orange; /* Color de los botones */
+  opacity: 0.8;
 }
 
 .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active,
@@ -14988,6 +14994,8 @@ body:not(.lg-from-hash)
 
 /* Cambia el fondo de la pantalla a azul claro */
 .swiper-container {
+  position: relative;
+  padding-bottom: 20px; /* Añade espacio para los botones */
   background-color: #add8e6 !important; /* Azul claro */
 }
 
@@ -15007,4 +15015,13 @@ body:not(.lg-from-hash)
   display: block; /* Evita espacios adicionales debajo */
   margin: 20px auto; /* Centra las imágenes */
   border-radius: 5px; /* Opcional: bordes redondeados */
+}
+.section-lg {
+  background-color: #add8e6; /* Azul institucional */
+  color: white; /* Asegura que el texto sea legible */
+  padding: 60px 0; /* Espaciado arriba y abajo */
+}
+
+.thumbnail-thin-inner {
+  background-color: transparent !important;
 }
