@@ -4606,7 +4606,6 @@ p.quote-classic-cite {
   bottom: 6.25%;
   left: 6.25%;
   z-index: 1;
-  background: rgba(255, 178, 98, 0.3);
 }
 
 .thumbnail-thin::after {
@@ -4658,16 +4657,13 @@ a.thumbnail-thin {
 @media (min-width: 992px) {
   html:not(.tablet):not(.mobile) .thumbnail-thin::before,
   html:not(.tablet):not(.mobile) .thumbnail-thin::after {
-    opacity: 0;
     transition: 0.22s ease-in;
   }
   html:not(.tablet):not(.mobile) .thumbnail-thin::before {
-    background: rgba(255, 178, 98, 0.8);
     transform: scale(0.97, 0.97);
   }
   html:not(.tablet):not(.mobile) .thumbnail-thin:hover::before,
   html:not(.tablet):not(.mobile) .thumbnail-thin:hover::after {
-    opacity: 1;
   }
   html:not(.tablet):not(.mobile) .thumbnail-thin:hover::before {
     transform: scale(1, 1);
@@ -15025,3 +15021,10 @@ body:not(.lg-from-hash)
 .thumbnail-thin-inner {
   background-color: transparent !important;
 }
+
+.rd-navbar-nav .rd-nav-item.active {
+  padding: 15px 20px; /* Asegura un espaciado uniforme */
+  line-height: normal; /* Ajusta la altura de la línea */
+  vertical-align: middle; /* Centra el texto */
+}
+
