@@ -15028,6 +15028,86 @@ body:not(.lg-from-hash)
   vertical-align: middle; /* Centra el texto */
 }
 
+/* Nueva Navbar personalizada */
+/* Nueva RD Navbar personalizada */
+.rd-navbar-custom {
+  background-color: #add8e6 !important; /* Fondo azul – ajusta el color si es necesario */
+}
+
+.rd-navbar-custom .rd-navbar-brand img {
+  height: 50px;
+  width: auto;
+}
+
+.rd-navbar-custom .rd-navbar-toggle {
+  border: none;
+}
+
+.rd-navbar-custom .rd-navbar-nav > li > a {
+  line-height: 50px;
+  padding-top: 0;
+  padding-bottom: 0;
+  font-weight: 500;
+  color: #000 !important;
+}
+
+.rd-navbar-custom .rd-navbar-dropdown {
+  background-color: #add8e6;
+  border: none;
+}
+
+.rd-navbar-custom .rd-navbar-dropdown a {
+  color: #000;
+}
+
+.rd-navbar-custom .rd-navbar-dropdown a:hover,
+.rd-navbar-custom .rd-navbar-dropdown a:focus {
+  color: #333;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 992px) {
+  /* Reducir altura de logo */
+  .rd-navbar-custom .rd-navbar-brand img {
+    height: 40px;
+  }
+  /* Reducir tamaño de fuente y altura de enlaces */
+  .rd-navbar-custom .rd-navbar-nav > li > a {
+    font-size: 14px;
+    line-height: 40px;
+    padding-left: 6px;
+    padding-right: 6px;
+  }
+}
+
+.footer-classic-aside {
+  background-color: #000; /* Negro */
+  color: #fff;           /* Texto en blanco */
+}
+
+.footer-classic-aside a {
+  color: #fff; /* Asegura también los enlaces en blanco */
+}
+
+/* Fuerza color blanco en todo el footer */
+.footer-classic[style*="background-color: #000"] {
+  color: #fff !important;
+}
+
+/* Fuerza enlaces en blanco */
+.footer-classic[style*="background-color: #000"] a,
+.footer-classic[style*="background-color: #000"] a:hover,
+.footer-classic[style*="background-color: #000"] a:focus {
+  color: #fff !important;
+}
+
+/* Si quieres que al pasar el ratón sea gris claro, añade: */
+
+.footer-classic[style*="background-color: #000"] a:hover {
+  color: #ccc !important;
+}
+
+
 
 
 
