@@ -9675,11 +9675,11 @@ html.tablet .ui-to-top {
 }
 
 .rd-navbar-classic.rd-navbar-static .rd-navbar-main > * + * {
-  margin-left: 30px;
+  /*margin-left: 30px;*/
 }
 
 .rd-navbar-classic.rd-navbar-static .rd-navbar-panel {
-  min-width: 240px;
+  /*min-width: 240px;*/
 }
 
 .rd-navbar-classic.rd-navbar-static .rd-navbar-brand {
@@ -9705,13 +9705,13 @@ html.tablet .ui-to-top {
 
 @media (min-width: 1200px) {
   .rd-navbar-classic.rd-navbar-static .rd-navbar-panel {
-    min-width: 300px;
+    /*min-width: 300px;*/
   }
   .rd-navbar-classic.rd-navbar-static .rd-navbar-main {
     padding: 35px 0 35px;
   }
   .rd-navbar-classic.rd-navbar-static .rd-navbar-main > * + * {
-    margin-left: 45px;
+    /*margin-left: 45px;*/
   }
 }
 
@@ -9863,11 +9863,11 @@ html.tablet .ui-to-top {
 }
 
 .rd-navbar-modern.rd-navbar-static .rd-navbar-collapse-content > * + * {
-  margin-left: 25px;
+ /* margin-left: 25px;*/
 }
 
 .rd-navbar-modern.rd-navbar-static .rd-navbar-panel {
-  min-width: 240px;
+  /*min-width: 240px;*/
 }
 
 .rd-navbar-modern.rd-navbar-static .rd-navbar-brand {
@@ -9889,13 +9889,13 @@ html.tablet .ui-to-top {
 
 @media (min-width: 1200px) {
   .rd-navbar-modern.rd-navbar-static .rd-navbar-panel {
-    min-width: 320px;
+    /*min-width: 320px;*/
   }
   .rd-navbar-modern.rd-navbar-static .rd-navbar-main {
     padding: 30px 0;
   }
   .rd-navbar-modern.rd-navbar-static .rd-navbar-main > * + * {
-    margin-left: 45px;
+    /*margin-left: 45px;*/
   }
   .rd-navbar-modern.rd-navbar-static .rd-navbar-nav > li + li {
     margin-left: 60px;
