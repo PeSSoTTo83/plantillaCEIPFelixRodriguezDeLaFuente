@@ -1,11 +1,8 @@
 <!DOCTYPE html>
-<html class="wide wow-animation" lang="en">
+<html class="wide wow-animation" lang="es">
   <head>
-    <title>CEIP Felix Rodriguez de la Fuente</title>
-    <meta
-      name="viewport"
-      content="width=device-width, height=device-height, initial-scale=1.0"
-    />
+    <title>CEIP Félix Rodríguez de la Fuente</title>
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0" />
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
@@ -17,7 +14,6 @@
     <link rel="stylesheet" href="css/bootstrap.css" />
     <link rel="stylesheet" href="css/fonts.css" />
     <link rel="stylesheet" href="css/style.css" />
-
     <style>
       .ie-panel {
         display: none;
@@ -32,6 +28,20 @@
       html.ie-10 .ie-panel,
       html.lt-ie-10 .ie-panel {
         display: block;
+      }
+      /* Opcional: estilo para el switcher de idioma */
+      .language-switcher {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        z-index: 1000;
+      }
+      .language-switcher a {
+        margin-right: 10px;
+      }
+      .language-switcher img {
+        height: 24px;
+        width: auto;
       }
     </style>
   </head>
@@ -56,7 +66,16 @@
     </div>
     <div class="page">
       <!-- Page Header-->
-      <header class="page-header">
+      <header class="page-header" style="position: relative;">
+        <!-- Selector de idioma -->
+        <div class="language-switcher">
+          <a href="index.html">
+            <img src="images/españa.png" alt="Español">
+          </a>
+          <a href="index-en.html">
+            <img src="images/uk.png" alt="English">
+          </a>
+        </div>
         <!-- RD Navbar-->
         <div class="rd-navbar-wrap">
           <nav
@@ -166,31 +185,15 @@
                   <div class="row">
                     <div class="col-md-10 col-lg-7">
                       <div class="box-animation">
-                        <h6
-                          data-caption-animate="slideInLeft"
-                          data-caption-delay="150"
-                        >
+                        <h6 data-caption-animate="slideInLeft" data-caption-delay="150">
                           
                         </h6>
-                        <h2
-                          data-caption-animate="slideInLeft"
-                          data-caption-delay="300"
-                        >
+                        <h2 data-caption-animate="slideInLeft" data-caption-delay="300">
                           
-                          <span class="text-italic font-weight-bold"
-                            ></span
-                          >
+                          <span class="text-italic font-weight-bold"></span>
                         </h2>
-                        <div
-                          class="button-block"
-                          data-caption-animate="fadeInUp"
-                          data-caption-delay="450"
-                        >
-                          <a
-                            class="button button-primary-gradient"
-                            href="laPlayaEsMiCole.html"
-                            ><span>La Playa es mi cole</span></a
-                          >
+                        <div class="button-block" data-caption-animate="fadeInUp" data-caption-delay="450">
+                          <a class="button button-primary-gradient" href="laPlayaEsMiCole.html"><span>La Playa es mi cole</span></a>
                         </div>
                       </div>
                     </div>
@@ -207,31 +210,15 @@
                   <div class="row">
                     <div class="col-md-10 col-lg-7">
                       <div class="box-animation">
-                        <h6
-                          data-caption-animate="slideInLeft"
-                          data-caption-delay="150"
-                        >
+                        <h6 data-caption-animate="slideInLeft" data-caption-delay="150">
                           
                         </h6>
-                        <h2
-                          data-caption-animate="slideInLeft"
-                          data-caption-delay="300"
-                        >
+                        <h2 data-caption-animate="slideInLeft" data-caption-delay="300">
                           
-                          <span class="text-italic font-weight-bold"
-                            ></span
-                          >
+                          <span class="text-italic font-weight-bold"></span>
                         </h2>
-                        <div
-                          class="button-block"
-                          data-caption-animate="fadeInUp"
-                          data-caption-delay="450"
-                        >
-                          <a
-                            class="button button-primary-gradient"
-                            href="erasmus.html"
-                            ><span>Programa Erasmus</span></a
-                          >
+                        <div class="button-block" data-caption-animate="fadeInUp" data-caption-delay="450">
+                          <a class="button button-primary-gradient" href="erasmus.html"><span>Programa Erasmus</span></a>
                         </div>
                       </div>
                     </div>
@@ -248,31 +235,15 @@
                   <div class="row">
                     <div class="col-md-10 col-lg-7">
                       <div class="box-animation">
-                        <h6
-                          data-caption-animate="slideInLeft"
-                          data-caption-delay="150"
-                        >
+                        <h6 data-caption-animate="slideInLeft" data-caption-delay="150">
                           
                         </h6>
-                        <h2
-                          data-caption-animate="slideInLeft"
-                          data-caption-delay="300"
-                        >
+                        <h2 data-caption-animate="slideInLeft" data-caption-delay="300">
                           
-                          <span class="text-italic font-weight-bold"
-                            ></span
-                          >
+                          <span class="text-italic font-weight-bold"></span>
                         </h2>
-                        <div
-                          class="button-block"
-                          data-caption-animate="fadeInUp"
-                          data-caption-delay="450"
-                        >
-                          <a
-                            class="button button-primary-gradient"
-                            href="blueSchool.html"
-                            ><span>Somos Blue School</span></a
-                          >
+                        <div class="button-block" data-caption-animate="fadeInUp" data-caption-delay="450">
+                          <a class="button button-primary-gradient" href="blueSchool.html"><span>Somos Blue School</span></a>
                         </div>
                       </div>
                     </div>
@@ -284,31 +255,25 @@
           <div class="swiper-pagination"></div>
         </div>
       </section>
+
       <!-- A Few Words About Me-->
       <section class="section section-lg bg-gray-100" style="color: #000;">
         <div class="container">
-          <div
-            class="row row-50 justify-content-center justify-content-lg-between"
-          >
+          <div class="row row-50 justify-content-center justify-content-lg-between">
             <div class="col-12">
               <h3 class="h-custom-1 f1">Sobre nosotros</h3>
             </div>
             <div class="col-md-6 col-lg-5 col-xl-3 wow fadeIn">
               <p>
-                Los Nietos es un pueblo perteneciente a la diputación del Rincón
-                de San Ginés, término municipal de Cartagena, que ha basado
-                tradicionalmente su economía en la pesca y agricultura y es
-                lugar de vacaciones, lo que ocasiona un incremento considerable
-                de población durante el verano. Consta de dos núcleos de
-                población: Los Nietos y Los Nietos Viejos.
+                Los Nietos es un pueblo perteneciente a la diputación del Rincón de San Ginés, término municipal de Cartagena, que ha basado tradicionalmente su economía en la pesca y agricultura y es lugar de vacaciones, lo que ocasiona un incremento considerable de población durante el verano. Consta de dos núcleos de población: Los Nietos y Los Nietos Viejos.
               </p>
-              <a class="button button-primary-gradient" href="losNietosInfo.html"><span>read more</span></a>
+              <a class="button button-primary-gradient" href="losNietosInfo.html"><span>Leer más</span></a>
             </div>
             <div class="col-md-6 col-xl-3 wow fadeIn" data-wow-delay=".2s">
               <!-- Linear progress bar-->
               <article class="progress-linear">
                 <div class="progress-header">
-                  <p>Accounting</p>
+                  <p>Progreso</p>
                   <span class="progress-value">75</span>
                 </div>
                 <div class="progress-bar-linear-wrap">
@@ -318,7 +283,7 @@
               <!-- Linear progress bar-->
               <article class="progress-linear">
                 <div class="progress-header">
-                  <p>Management</p>
+                  <p>Mantenimiento</p>
                   <span class="progress-value">33</span>
                 </div>
                 <div class="progress-bar-linear-wrap">
@@ -328,7 +293,7 @@
               <!-- Linear progress bar-->
               <article class="progress-linear">
                 <div class="progress-header">
-                  <p>Computer Technology</p>
+                  <p>Tecnologia</p>
                   <span class="progress-value">88</span>
                 </div>
                 <div class="progress-bar-linear-wrap">
@@ -338,7 +303,7 @@
               <!-- Linear progress bar-->
               <article class="progress-linear">
                 <div class="progress-header">
-                  <p>Medicine</p>
+                  <p>Deportes</p>
                   <span class="progress-value">75</span>
                 </div>
                 <div class="progress-bar-linear-wrap">
@@ -348,7 +313,7 @@
               <!-- Linear progress bar-->
               <article class="progress-linear">
                 <div class="progress-header">
-                  <p>Jurisprudence</p>
+                  <p>Extraescolares</p>
                   <span class="progress-value">50</span>
                 </div>
                 <div class="progress-bar-linear-wrap">
@@ -362,10 +327,11 @@
           </div>
         </div>
       </section>
+
       <!-- Featured Projects-->
       <section class="section section-lg bg-default text-center">
         <div class="container">
-          <h2 class="wow fadeIn">Our Featured Courses</h2>
+          <h2 class="wow fadeIn">Nuestros proyectos</h2>
           <div class="row row-30 row-md-50 row-xl-70">
             <div class="col-sm-6 col-lg-4 wow fadeIn">
               <!-- Post Minimal-->
@@ -375,11 +341,11 @@
                 </figure>
                 <div class="post-minimal-meta">
                   <ul class="list-inline">
-                    <li class="list-inline-item">Teacher:</li>
-                    <li class="list-inline-itema"><a href="#">Charles Banks</a></li>
+                    <li class="list-inline-item">Profesor</li>
+                    <li class="list-inline-itema"><a href="#">nombre</a></li>
                   </ul>
                 </div>
-                <h4 class="post-minimal-title"><a href="#">Financial Analyst Course</a></h4>
+                <h4 class="post-minimal-title"><a href="#">Proyecto 1</a></h4>
               </div>
             </div>
             <div class="col-sm-6 col-lg-4 wow fadeIn" data-wow-delay=".2s">
@@ -390,11 +356,11 @@
                 </figure>
                 <div class="post-minimal-meta">
                   <ul class="list-inline">
-                    <li class="list-inline-item">Teacher:</li>
-                    <li class="list-inline-itema"><a href="#">Maria Howard</a></li>
+                    <li class="list-inline-item">Profesor</li>
+                    <li class="list-inline-itema"><a href="#">nombre</a></li>
                   </ul>
                 </div>
-                <h4 class="post-minimal-title"><a href="#">Digital Marketing Course</a></h4>
+                <h4 class="post-minimal-title"><a href="#">Proyecto 2</a></h4>
               </div>
             </div>
             <div class="col-sm-6 col-lg-4 wow fadeIn" data-wow-delay=".4s">
@@ -405,11 +371,11 @@
                 </figure>
                 <div class="post-minimal-meta">
                   <ul class="list-inline">
-                    <li class="list-inline-item">Teacher:</li>
-                    <li class="list-inline-itema"><a href="#">Steven Carter</a></li>
+                    <li class="list-inline-item">Profesor</li>
+                    <li class="list-inline-itema"><a href="#">nombre</a></li>
                   </ul>
                 </div>
-                <h4 class="post-minimal-title"><a href="#">Graphic Design Course</a></h4>
+                <h4 class="post-minimal-title"><a href="#">Proyecto 3</a></h4>
               </div>
             </div>
             <div class="col-sm-6 col-lg-4 wow fadeIn">
@@ -420,11 +386,11 @@
                 </figure>
                 <div class="post-minimal-meta">
                   <ul class="list-inline">
-                    <li class="list-inline-item">Teacher:</li>
-                    <li class="list-inline-itema"><a href="#">Julie Weaver</a></li>
+                    <li class="list-inline-item">Profesor</li>
+                    <li class="list-inline-itema"><a href="#">nombre</a></li>
                   </ul>
                 </div>
-                <h4 class="post-minimal-title"><a href="#">Computer Science </a></h4>
+                <h4 class="post-minimal-title"><a href="#">Proyecto 4</a></h4>
               </div>
             </div>
             <div class="col-sm-6 col-lg-4 wow fadeIn" data-wow-delay=".2s">
@@ -435,11 +401,11 @@
                 </figure>
                 <div class="post-minimal-meta">
                   <ul class="list-inline">
-                    <li class="list-inline-item">Teacher:</li>
-                    <li class="list-inline-itema"><a href="#">Kathy Gibson</a></li>
+                    <li class="list-inline-item">Profesor</li>
+                    <li class="list-inline-itema"><a href="#">nombre</a></li>
                   </ul>
                 </div>
-                <h4 class="post-minimal-title"><a href="#">Political Economy</a></h4>
+                <h4 class="post-minimal-title"><a href="#">Proyecto 5</a></h4>
               </div>
             </div>
             <div class="col-sm-6 col-lg-4 wow fadeIn" data-wow-delay=".4s">
@@ -450,64 +416,117 @@
                 </figure>
                 <div class="post-minimal-meta">
                   <ul class="list-inline">
-                    <li class="list-inline-item">Teacher:</li>
-                    <li class="list-inline-itema"><a href="#">Walter Myers</a></li>
+                    <li class="list-inline-item">Profesor</li>
+                    <li class="list-inline-itema"><a href="#">nombre</a></li>
                   </ul>
                 </div>
-                <h4 class="post-minimal-title"><a href="#">Mathematics and Statistics</a></h4>
+                <h4 class="post-minimal-title"><a href="#">Proyecto 6</a></h4>
               </div>
             </div>
           </div>
-          <a class="button button-lg button-primary-gradient wow fadeIn" data-wow-delay=".2s" href="#"><span>view all courses</span></a>
+          <a class="button button-lg button-primary-gradient wow fadeIn" data-wow-delay=".2s" href="#"><span>ver todos nuestros poyectos</span></a>
         </div>
       </section>
-      <!-- Latest Blog Posts-->
+
+      <!--
+      =========================================================================
+      SE HAN ELIMINADO:
+        - La sección del Slide (Swiper)
+        - La sección “Sobre nosotros”
+        - La sección “Featured Projects”
+      =========================================================================
+      -->
+
+      <!-- Latest Blog Posts (conservado)-->
       <section class="section section-lg bg-default text-center">
         <div class="container">
-          <h2 class="wow fadeIn">Latest Blog Posts</h2>
+          <h2 class="wow fadeIn">Ultimas noticias</h2>
           <div class="row row-30 justify-content-center">
             <div class="col-sm-10 col-md-6 wow fadeIn">
-              <!-- Post Light--><a class="post-light context-dark" href="#" style="background-image: url(images/grid-blog-1-570x350.jpg)">
+              <!-- Post Light-->
+              <a
+                class="post-light context-dark"
+                href="#"
+                style="background-image: url(images/grid-blog-1-570x350.jpg)"
+              >
                 <div class="post-light-inner">
-                  <div class="badge">News</div>
+                  <div class="badge">Noticias</div>
                   <div class="post-light-main">
-                    <time class="post-light-time" datetime="2019">July 5, 2019, at 12:07 pm</time>
-                    <h4 class="post-light-title">Campus Opening Convocation</h4>
+                    <time class="post-light-time" datetime="2019"
+                      >fecha</time
+                    >
+                    <h4 class="post-light-title">titulo</h4>
                   </div>
-                </div></a>
+                </div>
+              </a>
             </div>
             <div class="col-sm-10 col-md-6 wow fadeIn" data-wow-delay=".2s">
-              <!-- Post Light--><a class="post-light context-dark" href="#" style="background-image: url(images/grid-blog-2-570x350.jpg)">
+              <!-- Post Light-->
+              <a
+                class="post-light context-dark"
+                href="#"
+                style="background-image: url(images/grid-blog-2-570x350.jpg)"
+              >
                 <div class="post-light-inner">
-                  <div class="badge">News</div>
+                  <div class="badge">Noticias</div>
                   <div class="post-light-main">
-                    <time class="post-light-time" datetime="2019">July 5, 2019, at 12:07 pm</time>
-                    <h4 class="post-light-title">Freshman Matriculation Ceremony at Bradston College</h4>
+                    <time class="post-light-time" datetime="2019"
+                      >fecha</time
+                    >
+                    <h4 class="post-light-title">
+                      titulo
+                    </h4>
                   </div>
-                </div></a>
+                </div>
+              </a>
             </div>
             <div class="col-sm-10 col-md-6 wow fadeIn">
-              <!-- Post Light--><a class="post-light context-dark" href="#" style="background-image: url(images/grid-blog-3-570x350.jpg)">
+              <!-- Post Light-->
+              <a
+                class="post-light context-dark"
+                href="#"
+                style="background-image: url(images/grid-blog-3-570x350.jpg)"
+              >
                 <div class="post-light-inner">
-                  <div class="badge">News</div>
+                  <div class="badge">Noticias</div>
                   <div class="post-light-main">
-                    <time class="post-light-time" datetime="2019">July 5, 2019, at 12:07 pm</time>
-                    <h4 class="post-light-title">Bradston College Leadership Academy</h4>
+                    <time class="post-light-time" datetime="2019"
+                      >fecha</time
+                    >
+                    <h4 class="post-light-title">
+                      titulo
+                    </h4>
                   </div>
-                </div></a>
+                </div>
+              </a>
             </div>
             <div class="col-sm-10 col-md-6 wow fadeIn" data-wow-delay=".2s">
-              <!-- Post Light--><a class="post-light context-dark" href="#" style="background-image: url(images/grid-blog-4-570x350.jpg)">
+              <!-- Post Light-->
+              <a
+                class="post-light context-dark"
+                href="#"
+                style="background-image: url(images/grid-blog-4-570x350.jpg)"
+              >
                 <div class="post-light-inner">
-                  <div class="badge">News</div>
+                  <div class="badge">Noticias</div>
                   <div class="post-light-main">
-                    <time class="post-light-time" datetime="2019">July 5, 2019, at 12:07 pm</time>
-                    <h4 class="post-light-title">Incoming Freshmen Gather for Blueprints: Photo Gallery</h4>
+                    <time class="post-light-time" datetime="2019"
+                      >fecha</time
+                    >
+                    <h4 class="post-light-title">
+                      titulo
+                    </h4>
                   </div>
-                </div></a>
+                </div>
+              </a>
             </div>
           </div>
-          <a class="button button-lg button-primary-gradient wow fadeIn" href="#" data-wow-delay=".2s"><span>Volver a Inicio</span></a>
+          <a
+            class="button button-lg button-primary-gradient wow fadeIn"
+            href="index.html"
+            data-wow-delay=".2s"
+            ><span>Volver a Inicio</span></a
+          >
         </div>
       </section>
       <!-- Gallery-->
@@ -519,21 +538,18 @@
               <img class="thumbnail-thin-image" src="images/logoAytoCT.jpg" alt="" style="width: 100%; height: auto; object-fit: contain; max-height: 320px;" />
             </div>
           </a>
-
           <!-- Thumbnail Thin 2 -->
           <a class="thumbnail-thin" href="https://educacion.cartagena.es/" target="_blank">
             <div class="thumbnail-thin-inner">
               <img class="thumbnail-thin-image" src="images/concejaliaEducacionCartagena2.jpg" alt="" style="width: 100%; height: auto; object-fit: contain; max-height: 320px;" />
             </div>
           </a>
-
           <!-- Thumbnail Thin 3 -->
           <a class="thumbnail-thin" href="https://www.carm.es/web/pagina?IDCONTENIDO=1&IDTIPO=180" target="_blank">
             <div class="thumbnail-thin-inner">
               <img class="thumbnail-thin-image" src="images/regionDeMurcia.png" alt="" style="width: 100%; height: auto; object-fit: contain; max-height: 320px;" />
             </div>
           </a>
-
           <!-- Thumbnail Thin 4 -->
           <a class="thumbnail-thin" href="https://european-union.europa.eu/index_es" target="_blank">
             <div class="thumbnail-thin-inner">
@@ -587,15 +603,8 @@
                 <h3>Accede a nuestro Facebook</h3>
                 <div class="social-icons">
                   <div style="margin-top: 15px">
-                    <a
-                      class="social-icon"
-                      href="https://www.facebook.com/p/CEIP-F%C3%A9lix-Rodr%C3%ADguez-de-la-Fuente-100068782473916/?locale=es_LA"
-                      target="_blank"
-                    >
-                      <i
-                        class="fa fa-facebook-square"
-                        style="color: #fff; font-size: 48px; font-style: normal"
-                      ></i>
+                    <a class="social-icon" href="https://www.facebook.com/p/CEIP-F%C3%A9lix-Rodr%C3%ADguez-de-la-Fuente-100068782473916/?locale=es_LA" target="_blank">
+                      <i class="fa fa-facebook-square" style="color: #fff; font-size: 48px; font-style: normal"></i>
                     </a>
                   </div>
                 </div>
@@ -603,44 +612,17 @@
               <!-- Columna de Formulario de Contacto -->
               <div class="col-sm-6 col-lg-5 col-xl-4">
                 <h3>Contacto</h3>
-                <form
-                  id="contact-form"
-                  action="https://formspree.io/f/mwplkbqo"
-                  method="POST"
-                  style="display: flex; flex-direction: column; max-width: 400px;"
-                >
+                <form id="contact-form" action="https://formspree.io/f/mwplkbqo" method="POST" style="display: flex; flex-direction: column; max-width: 400px;">
                   <label for="nombre">Nombre:</label>
-                  <input
-                    type="text"
-                    id="nombre"
-                    name="nombre"
-                    required
-                    style="margin-bottom: 10px;"
-                  />
+                  <input type="text" id="nombre" name="nombre" required style="margin-bottom: 10px;" />
       
                   <label for="email">Correo Electrónico:</label>
-                  <input
-                    type="email"
-                    id="email"
-                    name="email"
-                    required
-                    style="margin-bottom: 10px;"
-                  />
+                  <input type="email" id="email" name="email" required style="margin-bottom: 10px;" />
       
                   <label for="mensaje">Mensaje:</label>
-                  <textarea
-                    id="mensaje"
-                    name="mensaje"
-                    required
-                    style="margin-bottom: 10px;"
-                  ></textarea>
+                  <textarea id="mensaje" name="mensaje" required style="margin-bottom: 10px;"></textarea>
       
-                  <button
-                    type="submit"
-                    style="padding: 8px 16px; background-color: #007bff; color: #fff; border: none; cursor: pointer;"
-                  >
-                    Enviar
-                  </button>
+                  <button type="submit" style="padding: 8px 16px; background-color: #007bff; color: #fff; border: none; cursor: pointer;">Enviar</button>
                 </form>
                 <div id="resultado"></div>
               </div>
@@ -649,24 +631,19 @@
         </div>
       </footer>
       
-      
-      
-      
-      
-        <!-- Parte inferior del footer -->
-        <div class="footer-classic-aside">
-          <div class="container">
-            <p class="rights">
-              <span>&copy;&nbsp;</span><span class="copyright-year"></span>
-              <span>&nbsp;</span><span>Todos los derechos reservados.</span>
-              <span>&nbsp;</span><br class="d-sm-none" />
-              <a href="#">Terminos de uso</a><span> y</span><span>&nbsp;</span>
-              <a href="#">politica de privacidad</a>. Diseñada&nbsp;por&nbsp;
-              <a href="https://www.sgwebdevdesigner.es/">SGWebDesigner</a>
-            </p>
-          </div>
+      <!-- Parte inferior del footer -->
+      <div class="footer-classic-aside">
+        <div class="container">
+          <p class="rights">
+            <span>&copy;&nbsp;</span><span class="copyright-year"></span>
+            <span>&nbsp;</span><span>Todos los derechos reservados.</span>
+            <span>&nbsp;</span><br class="d-sm-none" />
+            <a href="#">Terminos de uso</a><span> y</span><span>&nbsp;</span>
+            <a href="#">politica de privacidad</a>. Diseñada&nbsp;por&nbsp;
+            <a href="https://www.sgwebdevdesigner.es/">SGWebDesigner</a>
+          </p>
         </div>
-      </footer>
+      </div>
     </div>
     <div class="snackbars" id="form-output-global"></div>
     <script src="js/core.min.js"></script>
